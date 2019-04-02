@@ -1,0 +1,141 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: TahomaCustom !important;
+    font-size: 13px;
+}
+
+.row-title {
+    height: 44px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+    .row-title .title-left {
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        min-width: 300px;
+        margin-bottom: 8px;
+    }
+
+    .row-title .title-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-left: 0px;
+        padding-right: 0px;
+        min-width: 300px;
+        margin-bottom: 4px;
+    }
+
+    .row-title .title-left .title-category {
+        color: #000;
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: normal;
+        padding: 0 5px 0 0;
+    }
+
+    .row-title .title-left .title-icon {
+        background-image: url('/contents/images/tittle-icon.png');
+        width: 20px;
+        height: 20px;
+    }
+
+    .row-title .title-left .title-text-customer {
+        font-weight: normal;
+        font-size: 16px;
+        color: #0072bc;
+        padding: 0 5px 0 5px;
+    }
+
+    .row-title .title-right .title-back-setting {
+        height: 28px;
+        border: 1px solid #ccc;
+        text-align: center;
+        background-color: #fcfcfc;
+        padding: 4px 16px 4px 16px;
+        font-size: 12px !important;
+        margin-right: 8px;
+        line-height: 18px;
+    }
+
+        .row-title .title-right .title-back-setting:hover {
+            background-color: #E8f1EB;
+            border: 1px solid #126daf;
+            cursor: pointer;
+        }
+
+    .row-title .title-right .title-feedback {
+        height: 28px;
+        display: flex;
+        border: 1px solid #ccc;
+        background-color: #fcfcfc;
+        align-items: center;
+        font-size: 12px !important;
+        padding: 3px 12px 3px 3px;
+    }
+
+        .row-title .title-right .title-feedback:hover {
+            background-color: #E8f1EB;
+            border: 1px solid #126daf;
+            cursor: pointer;
+        }
+
+        .row-title .title-right .title-feedback .title-feedback-text {
+            text-align: center;
+            padding: 0px 5px;
+            line-height: 17px;
+        }
+
+        .row-title .title-right .title-feedback .title-feedback-icon {
+            background-image: url(/contents/images/viewemail.png);
+            height: 16px;
+            width: 16px;
+            background-repeat: no-repeat;
+            padding: 0 5px;
+            margin-left: 10px;
+        }
+
+@font-face {
+    font-family: TahomaCustom;
+    src: url('/Contents/Fonts/Tahoma_Regular.woff');
+    src: url('/Contents/Fonts/Tahoma_Regular.woff?#iefix') format('embedded-opentype'),url('/Contents/Fonts/Tahoma_Regular.woff') format('woff'),url('/Contents/Fonts/Tahoma_Regular.woff') format('truetype'),url('/Contents/Fonts/Tahoma_Regular.svg#TahomaCustom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TahomaCustom';
+    src: url('/Contents/Fonts/Tahoma_Bold.eot');
+    src: url('/Contents/Fonts/Tahoma_Bold.eot?#iefix') format('embedded-opentype'),url('/Contents/Fonts/Tahoma_Bold.woff') format('woff'),url('/Contents/Fonts/Tahoma_Bold.ttf') format('truetype'),url('/Contents/Fonts/Tahoma_Bold.svg#TahomaCustom') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TahomaCustom';
+    src: url('/Contents/Fonts/Tahoma_Italic.eot');
+    src: url('/Contents/Fonts/Tahoma_Italic.eot?#iefix') format('embedded-opentype'),url('/Contents/Fonts/Tahoma_Italic.woff') format('woff'),url('/Contents/Fonts/Tahoma_Italic.ttf') format('truetype'),url('/Contents/Fonts/Tahoma_Italic.svg#TahomaCustom') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+.rowSelected {
+    background-color: #e0eff9 !important;
+}
+.text-align-right{
+    text-align: right;
+    padding-right: 4px;
+}
+.text-align-left {
+    text-align: left;
+    padding-left: 4px;
+}
+.text-align-center {
+    text-align: center;
+}

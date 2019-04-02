@@ -1,0 +1,173 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+}
+
+    table thead th {
+        font-weight: normal;
+        background-color: #ededed !important;
+    }
+
+    table thead th, tr {
+        border: 1px solid #ccc;
+    }
+
+    table tbody tr, td {
+        border: 1px solid #ccc;
+        height: 26px;
+    }
+
+tr:nth-child(even) { /*CSS :nth-child() Selector chọn các row. Nếu row là số even(lẻ) thì đổ màu. Có thể truyền tham số 3m+0*/
+    background-color: #fafafa;
+}
+
+table thead tr th .grid-column-title:hover {
+    background-color: #e5f4ff;
+}
+
+table tbody tr:hover {
+    background-color: #e3eff7;
+}
+
+.grid {
+    border-color: #ccc;
+    border-style: solid;
+    border-width: 0px 1px;
+    position: absolute;
+    /*overflow-x: auto;*/
+    bottom: 36px;
+    top: 108px;
+    right: 8px;
+    left: 8px;
+}
+
+    .grid .table-responsive {
+        position: absolute;
+        bottom: 0px;
+        top: 0px;
+        overflow: auto;
+    }
+
+    .grid .grid-column-title {
+        height: 28px;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .grid .column-customer-code {
+        width: 130px;
+    }
+
+    .grid .column-customer-name {
+        width: 150px;
+    }
+
+    .grid .column-company-name {
+        width: 150px;
+    }
+
+    .grid .column-tax-code {
+        width: 130px;
+    }
+
+    .grid .column-address {
+        width: 200px;
+    }
+
+    .grid .column-phone {
+        width: 130px;
+    }
+
+    .grid .column-email {
+        width: 150px;
+    }
+
+    .grid .column-card-code {
+        width: 150px;
+    }
+
+    .grid .column-card-level {
+        width: 150px;
+    }
+
+    .grid .column-amount {
+        width: 150px;
+    }
+
+    .grid .column-note {
+        width: 150px;
+    }
+
+    .grid .column-5food-member {
+        width: 120px;
+    }
+
+    .grid .column-unfollow {
+        width: 120px;
+    }
+
+    .grid .grid-column-filter {
+        width: 100%;
+        display: flex;
+        border: 1px solid #ccc;
+    }
+
+        .grid .grid-column-filter .filter-option {
+            width: 29px;
+            height: 24px;
+            background-color: #f9fcff;
+            text-align: center;
+            border-width: 0px 1px 0px 0px;
+            border-style: solid;
+            border-color: #ccc;
+        }
+
+            .grid .grid-column-filter .filter-option:before {
+                content: '∗';
+                line-height: 24px;
+                padding: 3px;
+            }
+
+        .grid .grid-column-filter .filter-option-amount {
+            width: 29px;
+            height: 24px;
+            background-color: #f9fcff;
+            text-align: center;
+            border-width: 0px 1px 0px 0px;
+            border-style: solid;
+            border-color: #ccc;
+        }
+
+            .grid .grid-column-filter .filter-option-amount:before {
+                content: '≤';
+                line-height: 24px;
+                padding: 3px;
+            }
+
+        .grid .grid-column-filter .filter-option-member {
+            background-image: url('/contents/images/trigger.png');
+            background-repeat: no-repeat;
+            background-position: 0px center;
+            width: 29px;
+            height: 24px;
+            background-color: #f9fcff;
+        }
+
+        .grid .grid-column-filter .filter-option-unfollow {
+            background-image: url('/contents/images/trigger.png');
+            background-position: 0px center;
+            background-repeat: no-repeat;
+            width: 29px;
+            height: 24px;
+            background-color: #f9fcff;
+        }
+
+        .grid .grid-column-filter .filter-input {
+            border: none;
+            width: 100%;
+            height: 24px;
+            padding: 4px;
+        }

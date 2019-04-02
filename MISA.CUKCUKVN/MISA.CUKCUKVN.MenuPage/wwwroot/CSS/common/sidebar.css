@@ -1,0 +1,101 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+.sidebar-row {
+    padding: 2px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-top: 1px solid #038ac1;
+    border-bottom: 1px solid #016087;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+    .sidebar-row:hover {
+        background-color: #EB7728;
+    }
+
+    .sidebar-row .sidebar-icon {
+        background-image: url('/contents/images/sidebar/iconmenu.png');
+        width: 24px;
+        height: 24px;
+    }
+
+    .sidebar-row .sidebar-text {
+        padding-left: 10px;
+    }
+
+    .sidebar-row .sidebar-icon-overview {
+        background-position: 0 533px;
+    }
+
+    .sidebar-row .sidebar-icon-report {
+        background-position: 0 342px;
+    }
+
+    .sidebar-row .sidebar-icon-buy {
+        background-position: 0 159px;
+    }
+
+    .sidebar-row .sidebar-icon-warehouse {
+        background-position: 0 495px;
+    }
+
+    .sidebar-row .sidebar-icon-cash {
+        background-position: 0 454px;
+    }
+
+    .sidebar-row .sidebar-icon-deposits {
+        background-image: url('/contents/images/sidebar/icon-deposit.png');
+        background-repeat: no-repeat;
+    }
+
+    .sidebar-row .sidebar-icon-cost {
+        background-image: url('/contents/images/sidebar/icon-cost.png');
+        background-repeat: no-repeat;
+    }
+
+    .sidebar-row .sidebar-icon-promotion {
+        background-image: url('/contents/images/sidebar/iconmenu.png');
+        background-position: 0 416px;
+    }
+
+    .sidebar-row .sidebar-icon-menu-food {
+        background-image: url('/contents/images/sidebar/menu_food.png');
+        background-repeat: no-repeat;
+    }
+
+    .sidebar-row .sidebar-icon-cancel-invoice {
+        background-image: url('/contents/images/sidebar/cancel-invoice.png');
+        background-repeat: no-repeat;
+    }
+    .sidebar-row .sidebar-icon-bill {
+        background-image: url('/contents/images/sidebar/icon-bill.png');
+        background-repeat: no-repeat;
+    }
+
+    .sidebar-row .sidebar-icon-category {
+        background-position: 0 380px;
+    }
+
+    .sidebar-row .sidebar-icon-setting {
+        background-position: 0 301px;
+    }
+
+    .sidebar-row .sidebar-icon-help {
+        background-image: url('/contents/images/sidebar/iconhelp.png');
+        background-repeat: no-repeat;
+    }
+
+    .sidebar-row .sidebar-icon-subscriber {
+        background-image: url('/contents/images/sidebar/icon-subscriber.png');
+        background-repeat: no-repeat;
+    }
+
+    .sidebar-row .sidebar-icon-5food {
+        background-image: url('/contents/images/sidebar/5food.png');
+        background-repeat: no-repeat;
+    }

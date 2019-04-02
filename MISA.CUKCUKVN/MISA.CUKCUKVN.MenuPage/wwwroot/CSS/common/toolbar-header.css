@@ -1,0 +1,147 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+.toolbar-header {
+    background-color: #ededed;
+    border-color: #d9d9d9;
+    border-style: solid;
+    border-width: 1px 1px 0px 1px;
+    padding: 2px;
+    height: 28px;
+    display: flex; /*Tự động cân đối kích thước các phần tử bên trong*/
+    overflow: hidden; /*Nếu zoom quá kích thước màn hình nội dung bị tràn ra sẽ ẩn đi*/
+}
+
+    .toolbar-header .toolbar-header-item {
+        display: flex;
+        border: 1px solid transparent;
+        cursor: pointer;
+        padding: 2px 4px;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .toolbar-header .toolbar-header-item:hover {
+            border: 1px solid #0973b9;
+            background-color: #fff;
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-icon {
+            background-image: url('/contents/images/toolbar_header/iconsprite.png');
+            width: 16px;
+            height: 16px;
+            background-repeat: no-repeat;
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-add {
+            background-position: 0-2648px;
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-dupplicate {
+            background-position: 0-1888px;
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-edit {
+            background-image: url('/contents/images/toolbar_header/edit16.png');
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-delete {
+            background-position: 0-2680px;
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-order {
+            background-image: url('/contents/images/toolbar_header/item-order.png');
+            width: 20px;
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-refresh {
+            background-position: 0-2584px;
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-help {
+            background-position: 0-1600px;
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-import {
+            background-image: url('/contents/images/toolbar_header/import16.png');
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-export {
+            background-image: url('/contents/images/toolbar_header/excel_97_24.png');
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-folder {
+            background-image: url('/contents/images/toolbar_header/folder-open.gif');
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-copy-menu {
+            background-position: 0-1888px;
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-update-image {
+            background-image: url('/contents/images/toolbar_header/icon-update.png');
+        }
+        .toolbar-header .toolbar-header-item .toolbar-header-item-update-price {
+            background-image: url('/contents/images/toolbar_header/price16.png');
+        }
+
+        .toolbar-header .toolbar-header-item .toolbar-header-item-text {
+            padding: 0 5px;
+        }
+
+    .toolbar-header .toolbar-header-boder-left {
+        border-style: solid;
+        border-width: 0px 0px 0px 1px;
+        border-left-color: #ccc;
+        margin: 4px 4px 4px 0px;
+    }
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-add {
+        min-width: 43px;
+    }
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-dupplicate {
+        min-width: 66px;
+    }
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-edit {
+        min-width: 32px;
+    }
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-delete {
+        min-width: 32px;
+    }
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-order {
+        min-width: 97px;
+    }
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-refresh {
+        min-width: 32px;
+    }
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-help {
+        min-width: 32px;
+    }
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-import {
+        min-width: 72px;
+    }
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-export {
+        min-width: 72px;
+    }
+
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-folder {
+        min-width: 107px;
+    }
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-copy-menu {
+        min-width: 119px;
+    }
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-update-image {
+        min-width: 87px;
+    }
+    .toolbar-header .toolbar-header-item .toolbar-header-item-min-width-update-price {
+        min-width: 87px;
+    }

@@ -1,0 +1,141 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+.toolbar-pagging {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    height: 28px;
+    max-height: 28px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    font-size: 13px !important;
+}
+
+    .toolbar-pagging .pagging-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+        .toolbar-pagging .pagging-container .pagging-left {
+            min-width: 600px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+            .toolbar-pagging .pagging-container .pagging-left .pagging-icon {
+                background-repeat: no-repeat;
+                width: 16px;
+                height: 16px;
+                margin-left: 5px;
+                margin-right: 10px;
+                background-position: 0px center;
+            }
+
+            .toolbar-pagging .pagging-container .pagging-left .page-first {
+                background-image: url('/contents/images/pagging/page-first.png');
+                opacity: 0.5; /*Làm mờ ảnh đi khi đã trở về trang đầu*/
+            }
+
+            .toolbar-pagging .pagging-container .pagging-left .page-prev {
+                background-image: url('/contents/images/pagging/page-prev.png');
+                opacity: 0.5;
+            }
+
+            .toolbar-pagging .pagging-container .pagging-left .pagging-border-left {
+                border-style: solid;
+                border-width: 0px 0px 0px 1px;
+                border-left-color: #ccc;
+                margin: 3px 6px 3px 3px;
+                height: 15px;
+            }
+
+            .toolbar-pagging .pagging-container .pagging-left .paggging-text-left {
+                margin: 5px 14px 5px 6px;
+            }
+
+            .toolbar-pagging .pagging-container .pagging-left .pagging-input {
+                width: 40px;
+                height: 24px;
+                border: 1px solid #ccc;
+            }
+
+                .toolbar-pagging .pagging-container .pagging-left .pagging-input .input-field {
+                    width: 38px;
+                    height: 22px;
+                    padding: 3px 5px;
+                    border: none;
+                }
+
+            .toolbar-pagging .pagging-container .pagging-left .paggging-text-right {
+                margin: 5px 8px 5px 6px;
+            }
+
+            .toolbar-pagging .pagging-container .pagging-left .page-next {
+                background-image: url('/contents/images/pagging/page-next.png');
+                opacity: 0.5;
+            }
+
+            .toolbar-pagging .pagging-container .pagging-left .page-last {
+                background-image: url('/contents/images/pagging/page-last.png');
+                opacity: 0.5;
+            }
+
+            .toolbar-pagging .pagging-container .pagging-left .page-refresh {
+                background-image: url('/contents/images/pagging/refresh.png');
+                margin-left: 6px;
+                margin-right: 9px;
+            }
+
+            .toolbar-pagging .pagging-container .pagging-left .page-combo-box {
+                margin-left: 35px;
+                display: flex;
+                width: 60px;
+                border: 1px solid #ccc;
+                height: 24px;
+            }
+
+                .toolbar-pagging .pagging-container .pagging-left .page-combo-box .combobox-input {
+                    border: none;
+                    width: 36px;
+                    background-color: #f2f2f2;
+                    padding: 3px 5px 3px !important;
+                }
+
+                .toolbar-pagging .pagging-container .pagging-left .page-combo-box .combobox-icon {
+                    background-image: url('/contents/images/pagging/trigger.png');
+                    background-repeat: no-repeat;
+                    width: 22px;
+                    background-position: 0px center;
+                    margin-left: 2px;
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .toolbar-pagging .pagging-container .pagging-right {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 4px;
+        }
+
+            .toolbar-pagging .pagging-container .pagging-right .right-text {
+                margin-right: 10px;
+            }

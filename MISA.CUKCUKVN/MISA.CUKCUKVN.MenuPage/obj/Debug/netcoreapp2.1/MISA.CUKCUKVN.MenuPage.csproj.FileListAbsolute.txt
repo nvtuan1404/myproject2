@@ -1,0 +1,13 @@
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.deps.json
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.runtimeconfig.json
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.runtimeconfig.dev.json
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.dll
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.pdb
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.csproj.CoreCompileInputs.cache
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.RazorAssemblyInfo.cache
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.RazorAssemblyInfo.cs
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.AssemblyInfoInputs.cache
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.AssemblyInfo.cs
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.RazorTargetAssemblyInfo.cache
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.dll
+E:\NVTuan\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.pdb

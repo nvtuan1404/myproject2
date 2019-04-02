@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CUKCUK</title>
+    <link href="/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="/CSS/common/common.css" rel="stylesheet" />
+    <link href="/CSS/common/header.css" rel="stylesheet" />
+    <link href="/CSS/common/sidebar.css" rel="stylesheet" />
+    <link href="/CSS/common/toolbar-header.css" rel="stylesheet" />
+    <link href="/CSS/common/grid.css" rel="stylesheet" />
+    <link href="/CSS/common/toolbar-pagging.css" rel="stylesheet" />
+    <link href="/CSS/Views/index.css" rel="stylesheet" />
+    <link href="/CSS/lib/jquery-ui.min.css" rel="stylesheet" />
+    <link href="/CSS/base/dialog.css" rel="stylesheet" />
+    <link href="/Contents/Images/favicon.jpg" rel="shortcut icon" />
+</head>
+<body>
+    <!--Created by NVTuan-25/3/2019-->
+    <div class="container-fluid">
+        <!--Phần header-->
+        <div class="header">
+            <div class="row-header">
+                <div class="header-left">
+                    <div class="header-left-image">
+                        <div class="header-left-icon"></div>
+                        <div class="header-left-text"></div>
+                    </div>
+                    <div class="header-left-option">
+                        <div class="header-left-form">
+                            <input class="header-left-input" type="text" value="Đại dương xanh" />
+                        </div>
+                        <div class="header-left-button"></div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-right-col">
+                        <div class="header-right-option">
+                            <div class="header-right-form">
+                                <input class="header-right-input" type="text" value="Tiếng Việt (Tiếng Việt)" />
+                            </div>
+                            <div class="header-right-button"></div>
+                        </div>
+                        <div class="header-right-icon-globe"></div>
+                        <div class="header-right-icon-user"></div>
+                        <span class="header-right-text">Đặng Thành Tâm</span>
+                        <span class="header-right-icon-logout"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Phần content-->
+        <div class="container-content">
+            <!--Phần sidebar-->
+            <div class="sidebar">
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-overview sidebar-icon"></div>
+                    <div class="sidebar-text">Tổng quan</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-report sidebar-icon"></div>
+                    <div class="sidebar-text">Báo cáo</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-buy sidebar-icon"></div>
+                    <div class="sidebar-text">Mua hàng</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-warehouse sidebar-icon"></div>
+                    <div class="sidebar-text">Kho</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-cash sidebar-icon"></div>
+                    <div class="sidebar-text">Quỹ tiền mặt</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-deposits sidebar-icon"></div>
+                    <div class="sidebar-text">Quỹ tiền gửi</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-cost sidebar-icon"></div>
+                    <div class="sidebar-text">Chi phí</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-promotion sidebar-icon"></div>
+                    <div class="sidebar-text">Khuyến mại</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-menu-food sidebar-icon"></div>
+                    <div class="sidebar-text">Thực đơn</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-cancel-invoice sidebar-icon"></div>
+                    <div class="sidebar-text">Hủy hóa đơn</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-bill sidebar-icon"></div>
+                    <div class="sidebar-text">Hóa đơn điện tử</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-category sidebar-icon"></div>
+                    <div class="sidebar-text">Danh mục</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-setting sidebar-icon"></div>
+                    <div class="sidebar-text">Thiết lập hệ thống</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-help sidebar-icon"></div>
+                    <div class="sidebar-text">Trợ giúp</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-subscriber sidebar-icon"></div>
+                    <div class="sidebar-text">Thuê bao</div>
+                </div>
+                <div class="sidebar-row">
+                    <div class="sidebar-icon-5food sidebar-icon"></div>
+                    <div class="sidebar-text">5Food</div>
+                </div>
+            </div>
+            <!--Phần content right-->
+            <div class="container-content-right">
+                <div class="content">
+                    <div class="row-title">
+                        <div class="col-sm-6 title-left">
+                            <div class="title-category">Danh mục</div>
+                            <div class="title-icon"></div>
+                            <div class="title-text-customer">Thực đơn</div>
+                        </div>
+                        <div class="col-sm-6 title-right">
+                            <div class="title-back-setting">Quay lại thiết lập ban đầu</div>
+                            <div class="title-feedback">
+                                <div class="title-feedback-icon"></div>
+                                <div class="title-feedback-text">Phản hồi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Phần toolbar header-->
+                    <div class="toolbar-header">
+                        <div class="toolbar-header-item" id="btnAdd">
+                            <div class="toolbar-header-item-icon toolbar-header-item-add"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-add">Thêm</div>
+                        </div>
+                        <div class="toolbar-header-item" id="btnDupplicate">
+                            <div class="toolbar-header-item-icon toolbar-header-item-dupplicate"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-dupplicate">Nhân bản</div>
+                        </div>
+                        <div class="toolbar-header-item" id="btnEdit">
+                            <div class="toolbar-header-item-icon toolbar-header-item-edit"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-edit">Sửa</div>
+                        </div>
+                        <div class="toolbar-header-item" id="btnDelete">
+                            <div class="toolbar-header-item-icon toolbar-header-item-delete"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-delete">Xóa</div>
+                        </div>
+
+                        <div class="toolbar-header-boder-left"></div>
+                        <div class="toolbar-header-item">
+                            <div class="toolbar-header-item-icon toolbar-header-item-order"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-order">Sắp xếp thứ tự</div>
+                        </div>
+                        
+                        <div class="toolbar-header-boder-left"></div>
+ 
+                        <div class="toolbar-header-item" id="btnRefresh">
+                            <div class="toolbar-header-item-icon toolbar-header-item-refresh"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-refresh">Nạp</div>
+                        </div>
+                        <div class="toolbar-header-item">
+                            <div class="toolbar-header-item-icon toolbar-header-item-help"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-help">Giúp</div>
+                        </div>
+                    </div>
+                    <div class="toolbar-header">
+                        <div class="toolbar-header-item">
+                            <div class="toolbar-header-item-icon toolbar-header-item-folder"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-folder">Chọn từ thư viện</div>
+                        </div>
+                        <div class="toolbar-header-item">
+                            <div class="toolbar-header-item-icon toolbar-header-item-import"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-import">Nhập khẩu</div>
+                        </div>
+                        <div class="toolbar-header-item">
+                            <div class="toolbar-header-item-icon toolbar-header-item-export"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-export">Xuất Khẩu</div>
+                        </div>
+                        <div class="toolbar-header-item">
+                            <div class="toolbar-header-item-icon toolbar-header-item-copy-menu"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-copy-menu">Sao chép thực đơn</div>
+                        </div>
+                        <div class="toolbar-header-boder-left"></div>
+                        <div class="toolbar-header-item">
+                            <div class="toolbar-header-item-icon toolbar-header-item-update-image"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-update-image">Cập nhật ảnh</div>
+                        </div>
+                        <div class="toolbar-header-item">
+                            <div class="toolbar-header-item-icon toolbar-header-item-update-price"></div>
+                            <div class="toolbar-header-item-text toolbar-header-item-min-width-update-price">Cập nhật giá</div>
+                        </div>
+                    </div>
+                    <!--Phần table-->
+                    <div class="grid">
+                        <div class="table-responsive">
+                            <table id="tableCustomer">
+                                <thead>
+                                    <tr>
+                                        <th fieldData="customerCode">
+                                            <div class="grid-column-title column-customer-code">Mã khách hàng</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th fieldData="customerName">
+                                            <div class="grid-column-title column-customer-name">Tên khách hàng</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th fieldData="companyName">
+                                            <div class="grid-column-title column-company-name">Tên công ty</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th fieldData="taxCode">
+                                            <div class="grid-column-title column-tax-code">Mã số thuế</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th fieldData="address">
+                                            <div class="grid-column-title column-address">Địa chỉ</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th fieldData="phoneNumber">
+                                            <div class="grid-column-title column-phone">Số điện thoại</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th fieldData="email">
+                                            <div class="grid-column-title column-email">Email</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th fieldData="memberCardCode">
+                                            <div class="grid-column-title column-card-code">Mã thẻ thành viên</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th fieldData="cardLevel">
+                                            <div class="grid-column-title column-card-level">Hạng thẻ</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th fieldData="amount" dataType="money">
+                                            <div class="grid-column-title column-amount">Số tiền nợ</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option-amount"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th fieldData="note">
+                                            <div class="grid-column-title column-note">Ghi chú</div>
+                                            <div class="grid-column-filter">
+                                                <div class="filter-option"></div>
+                                                <input class="filter-input" />
+                                            </div>
+                                        </th>
+                                        <th fieldData="fiveFoodMember" dataType="checkbox">
+                                            <div class="grid-column-title column-5food-member">Thành viên 5Food</div>
+                                            <div class="grid-column-filter">
+                                                <input class="filter-input" />
+                                                <div class="filter-option-member"></div>
+
+                                            </div>
+                                        </th>
+                                        <th fieldData="unfollow" dataType="checkbox">
+                                            <div class="grid-column-title column-unfollow">Ngừng theo dõi</div>
+                                            <div class="grid-column-filter">
+                                                <input class="filter-input" />
+                                                <div class="filter-option-member"></div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbodyCustomer"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--Phần toolbar pagging-->
+                    <div class="toolbar-pagging">
+                        <div class="pagging-container">
+                            <div class="pagging-left">
+                                <div class="page-first pagging-icon"></div>
+                                <div class="page-prev pagging-icon"></div>
+                                <div class="pagging-border-left"></div>
+                                <div class="paggging-text-left"><span>Trang</span></div>
+                                <div class="pagging-input"><input class="input-field" type="text" value="1" /></div>
+                                <div class="paggging-text-right"><span>trên </span> <span>1</span></div>
+                                <div class="pagging-border-left"></div>
+                                <div class="page-next pagging-icon"></div>
+                                <div class="page-last pagging-icon"></div>
+                                <div class="pagging-border-left"></div>
+                                <div class="page-refresh pagging-icon"></div>
+                                <div class="pagging-border-left"></div>
+                                <div class="page-combo-box">
+                                    <input class="combobox-input" type="text" value="100" />
+                                    <div class="combobox-icon"></div>
+                                </div>
+                            </div>
+                            <div class="pagging-right">
+                                <div class="right-text">
+                                    <span>Hiển thị <span>1</span> - <span>100</span> trên <span>100</span> kết quả</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dialogCustomer" title="Khách hàng">
+        <div class="box-dialog">
+            <div class="row-dialog">
+                <div class="col-1-dialog">
+                    <span class="text-dialog">Mã khách hàng <span class="text-dialog-warning">(*)</span></span>
+                    <input class="input-dialog-short" />
+                </div>
+                <div class="col-2-dialog">
+                    <span class="text-dialog">Tên khách hàng <span class="text-dialog-warning">(*)</span></span>
+                    <input class="input-dialog-short" />
+                </div>
+            </div>
+            <div class="row-dialog">
+                <div class="col-dialog">
+                    <span class="text-dialog">Mã thẻ thành viên</span>
+                    <input class="input-dialog-short" />
+                </div>
+                <div class="col-dialog">
+                    <span class="text-dialog">Hạng thẻ</span>
+                    <input class="input-dialog-short" />
+                </div>
+            </div>
+            <!--<div class="row-dialog">
+                <span>Nhóm khách hàng</span>
+                <input />
+            </div>
+            <div class="row-dialog">
+                <span>ĐT di động</span>
+                <input />
+            </div>
+            <div class="row-dialog">
+                <span>Ngày sinh</span>
+                <input />
+            </div>
+            <div class="row-dialog">
+                <span>Tên công ty</span>
+                <input />
+            </div>
+            <div class="col-dialog">
+                <span>Mã số thuế</span>
+                <input />
+                <span>Email</span>
+                <input />
+            </div>
+            <div class="row-dialog">
+                <span>Địa chỉ</span>
+                <input />
+            </div>
+            <div class="row-dialog">
+                <span>Ghi chú</span>
+                <textarea></textarea>
+            </div>
+            <div class="row-dialog">
+                <input type="checkbox" />
+                <span>Ngừng theo dõi</span>
+            </div>-->
+        </div>
+    </div>
+    <script src="/Scripts/lib/jquery-3.3.1.min.js"></script>
+    <script src="/Scripts/lib/jquery-ui.min.js"></script>
+    <script src="/Scripts/lib/bootstrap.min.js"></script>
+    <script src="/Scripts/lib/popper.min.js"></script>
+    <script src="/Scripts/common/common.js"></script>
+    <script src="/Scripts/base/dialog.js"></script>
+    <script src="/Scripts/Views/index.js"></script>
+</body>
+</html>
