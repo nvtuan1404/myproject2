@@ -7,15 +7,15 @@ using MISA.CUKCUKVN.MenuPage.Models;
 
 namespace MISA.CUKCUKVN.MenuPage.Controllers
 {
-    [Route("api/Customer/[action]")]
+    [Route("api/Menu/[action]")]
     [ApiController]
-    public class CustomerController : ControllerBase
+    public class MenuController : ControllerBase
     {
         // GET api/Customer
         [HttpGet]
-        public IEnumerable<Customer> Get()
+        public IEnumerable<Menu> Get()
         {
-            return Customer.customers;
+            return Menu.listMenu;
         }
 
         // GET api/values/5

@@ -10,7 +10,7 @@ class CustomerJS {
     // Hàm khởi tạo các sự kiện
     // Created by NVTuan - 1/4/2019
     initEvents() {
-        $('#tableCustomer').on('click', '#tbodyCustomer tr', CusObject.rowSelected); // Gọi hàm chọn một bản ghi 
+        $('#tableMenu').on('click', '#tbodyMenu tr', CusObject.rowSelected); // Gọi hàm chọn một bản ghi 
         $(document).on('click', '#btnAdd', function () {
             dia.dialog.dialog('open');
         });
@@ -27,7 +27,7 @@ class CustomerJS {
     // Created by NVTuan ngày 29/3/2019
     loadData() {
         $.ajax({
-            url: "https://localhost:44345/api/Customer/Get",
+            url: "https://localhost:44345/api/Menu/Get",
             method: "GET",
             success: function (data) {
                 CusObject.builDataIntoTable(data);

@@ -9,13 +9,13 @@ var CusObject = Object.create({
     // Created by NVTuan ngày 29/3/2019
     builDataIntoTable: function (data) {
         $.each(data, function (index, itemData) {
-            var column = $('#tableCustomer thead tr th'); // Lấy thông tin các cột dữ liệu
+            var column = $('#tableMenu thead tr th'); // Lấy thông tin các cột dữ liệu
             var rowHTML = '<tr></tr>';
             if (index === 0) {
-                rowHTML = '<tr class = "rowSelected" customerId = "' + itemData.customerID + '"></tr>'; // Gán class rowSelected và id cho dòng đầu tiên
+                rowHTML = '<tr class = "rowSelected" id = "' + itemData.menuID + '"></tr>'; // Gán class rowSelected và id cho dòng đầu tiên
             }
             else {
-                rowHTML = '<tr customerId = "' + itemData.customerID + '"></tr>'; // Gán id cho các dòng còn lại
+                rowHTML = '<tr id = "' + itemData.menuID + '"></tr>'; // Gán id cho các dòng còn lại
             }
             $.each(column, function (index, itemCol) {
                 var fieldData = $(itemCol).attr('fieldData'); // Lấy giá trị của các fieldData
@@ -44,7 +44,7 @@ var CusObject = Object.create({
                     }
                 }
             });
-            $('#tbodyCustomer').append(rowHTML); // Thêm một row vào table
+            $('#tbodyMenu').append(rowHTML); // Thêm một row vào table
         });
     },
 

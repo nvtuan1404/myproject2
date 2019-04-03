@@ -37,7 +37,6 @@ table tbody tr:hover {
     border-style: solid;
     border-width: 0px 1px;
     position: absolute;
-    /*overflow-x: auto;*/
     bottom: 36px;
     top: 108px;
     right: 8px;
@@ -47,7 +46,7 @@ table tbody tr:hover {
     .grid .table-responsive {
         position: absolute;
         bottom: 0px;
-        top: 0px;
+        top: 56px;
         overflow: auto;
     }
 
@@ -57,56 +56,43 @@ table tbody tr:hover {
         line-height: 28px;
     }
 
-    .grid .column-customer-code {
-        width: 130px;
+    .grid .column-dish-type {
+        width: 160px;
     }
 
-    .grid .column-customer-name {
+    .grid .column-dish-code {
+        width: 180px;
+    }
+
+    .grid .column-dish-name {
         width: 150px;
     }
 
-    .grid .column-company-name {
+    .grid .column-menu-group {
         width: 150px;
     }
 
-    .grid .column-tax-code {
-        width: 130px;
+    .grid .column-dish-unit {
+        width: 90px;
     }
 
-    .grid .column-address {
-        width: 200px;
-    }
-
-    .grid .column-phone {
-        width: 130px;
-    }
-
-    .grid .column-email {
-        width: 150px;
-    }
-
-    .grid .column-card-code {
-        width: 150px;
-    }
-
-    .grid .column-card-level {
-        width: 150px;
-    }
-
-    .grid .column-amount {
-        width: 150px;
-    }
-
-    .grid .column-note {
-        width: 150px;
-    }
-
-    .grid .column-5food-member {
+    .grid .column-dish-price {
         width: 120px;
     }
+    .grid .column-change-with-price {
+        width: 150px;
+    }
 
-    .grid .column-unfollow {
-        width: 120px;
+    .grid .column-quantify {
+        width: 140px;
+    }
+
+    .grid .column-show-on-menu {
+        width: 150px;
+    }
+
+    .grid .column-unsell {
+        width: 110px;
     }
 
     .grid .grid-column-filter {
@@ -131,7 +117,7 @@ table tbody tr:hover {
                 padding: 3px;
             }
 
-        .grid .grid-column-filter .filter-option-amount {
+        .grid .grid-column-filter .filter-option-price {
             width: 29px;
             height: 24px;
             background-color: #f9fcff;
@@ -141,13 +127,13 @@ table tbody tr:hover {
             border-color: #ccc;
         }
 
-            .grid .grid-column-filter .filter-option-amount:before {
-                content: '≤';
-                line-height: 24px;
-                padding: 3px;
-            }
+        .grid .grid-column-filter .filter-option-price:before {
+            content: '≤';
+            line-height: 24px;
+            padding: 3px;
+        }
 
-        .grid .grid-column-filter .filter-option-member {
+        .grid .grid-column-filter .filter-option-other {
             background-image: url('/contents/images/trigger.png');
             background-repeat: no-repeat;
             background-position: 0px center;
