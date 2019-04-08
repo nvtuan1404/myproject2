@@ -4,7 +4,7 @@ Number.prototype.formatMoney = function () {
     return this.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
 };
 
-var CusObject = Object.create({
+var MenuObject = Object.create({
     // Hàm build dữ liệu lên table
     // Created by NVTuan ngày 29/3/2019
     builDataIntoTable: function (data) {
@@ -53,5 +53,5 @@ var CusObject = Object.create({
     rowSelected: function () {
         $('tr').removeClass('rowSelected');
         $(this).addClass('rowSelected');
-    },
+    }
 });

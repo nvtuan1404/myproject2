@@ -13,7 +13,7 @@
     background-color: #0072bc !important;
     font-weight: normal;
     color: #fff;
-    padding: 3px 4px 1px 8px !important;
+    padding: 4px 4px 1px 8px !important;
 }
 
 .ui-dialog .ui-dialog-titlebar-close {
@@ -26,6 +26,7 @@
     height: 16px;
     background-color: #0072bc;
     padding: 0px;
+    margin: -8px 3px 0px 0px;
 }
 
 .ui-widget.ui-widget-content {
@@ -82,3 +83,48 @@
     width: 100%;
     justify-content:flex-end;
 }
+
+.box-dialog .header-dialog {
+    height: 40px;
+    background-color: #e9e9e9;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    display: flex;
+    /*align-items: center;*/
+    padding: 8px 0px 0px 8px;
+}
+
+.header-dialog .header-dialog-title {
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.box-dialog .header-dialog-combobox {
+    display: flex;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c1c1c1 #d9d9d9 #d9d9d9;
+    height: 22px;
+    margin-left: 4px;
+}
+
+.header-dialog-combobox .header-dialog-input {
+    width: 91px;
+    height: 22px;
+    border: none;
+    background-color: #fff;
+    font-size: 12px;
+    padding: 3px 5px;
+    font-family: TahomaCustom;
+}
+    .header-dialog-combobox .header-dialog-input:focus{
+        outline: none;
+       
+    }
+    .header-dialog-combobox .header-dialog-icon {
+        background-image: url('/contents/images/dialog/trigger.png');
+        background-position: 0 center;
+        width: 22px;
+        height: 22px;
+    }

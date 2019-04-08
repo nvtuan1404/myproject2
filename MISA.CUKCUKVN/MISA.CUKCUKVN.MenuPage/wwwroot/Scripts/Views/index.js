@@ -1,6 +1,6 @@
-﻿// Lớp CustomerJS chứa các hàm thêm, sửa, xóa, nạp, nhân bản và hàm khởi tạo các sự kiện
+﻿// Lớp MenuJS chứa các hàm thêm, sửa, xóa, nạp, nhân bản và hàm khởi tạo các sự kiện
 // Created by NVTuan - 29/3/2019
-class CustomerJS {
+class MenuJS {
 
     constructor() {
         this.loadData(); // Gọi hàm load dữ liệu lên bảng
@@ -10,7 +10,7 @@ class CustomerJS {
     // Hàm khởi tạo các sự kiện
     // Created by NVTuan - 1/4/2019
     initEvents() {
-        $('#tableMenu').on('click', '#tbodyMenu tr', CusObject.rowSelected); // Gọi hàm chọn một bản ghi 
+        $('#tableMenu').on('click', '#tbodyMenu tr', MenuObject.rowSelected); // Gọi hàm chọn một bản ghi 
         $(document).on('click', '#btnAdd', function () {
             dia.dialog.dialog('open');
         });
@@ -30,7 +30,7 @@ class CustomerJS {
             url: "https://localhost:44345/api/Menu/Get",
             method: "GET",
             success: function (data) {
-                CusObject.builDataIntoTable(data);
+                MenuObject.builDataIntoTable(data);
             },  
             error: function () {
                 console.log("Có lỗi khi lấy dữ liệu");
@@ -69,5 +69,5 @@ class CustomerJS {
 
     }
 }
-var dia = new Dialog('.dialogCustomer', 680, 386);
-var CJS = new CustomerJS(); // Khởi tạo đối tượng
+var dia = new Dialog('.dialogMenu', 750, 515);
+var MJS = new MenuJS(); // Khởi tạo đối tượng
