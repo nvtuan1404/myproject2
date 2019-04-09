@@ -316,69 +316,113 @@
             </div>
         </div>
     </div>
+    <!--Phần dialog cho thêm, sửa, nhân bản-->
     <div class="dialogMenu" title="Thêm món">
         <div class="box-dialog">
             <div class="header-dialog">
                 <div class="header-dialog-title">Loại</div>
                 <div class="header-dialog-combobox">
-                    <input type="text" value="Món ăn" class="header-dialog-input"/>
+                    <input type="text" value="Món ăn" class="header-dialog-input" />
                     <div class="header-dialog-icon"></div>
                 </div>
             </div>
-            <!--<div class="row-dialog">
-                <div class="col-1-dialog">
-                    <span class="text-dialog">Mã khách hàng <span class="text-dialog-warning">(*)</span></span>
-                    <input class="input-dialog-short" />
+            <div class="form-dialog">
+                <div class="form-dialog-left">
+                    <div class="row-dialog">
+                        <span class="text-dialog">Tên món <span class="text-dialog-warning">(*)</span></span>
+                        <input class="input-dialog" />
+                    </div>
+                    <div class="row-dialog">
+                        <span class="text-dialog">Mã món <span class="text-dialog-warning">(*)</span></span>
+                        <input class="input-dialog" />
+                    </div>
+                    <div class="row-dialog">
+                        <div class="col-1-dialog">
+                            <span class="text-dialog">Thứ tự món</span>
+                            <input class="input-dialog-index" />
+                        </div>
+                        <div class="col-2-dialog">
+                            <input type="checkbox" />
+                            <span class="text-dialog-checkbox">Là món đặc trưng</span>
+                        </div>
+                    </div>
+                    <div class="row-dialog">
+                        <span class="text-dialog">Nhóm thực đơn</span>
+                        <div class="form-option">
+                            <input class="input-dialog input-option" />
+                            <div class="icon-option-dropdown"></div>
+                            <div class="icon-option-add"></div>
+                        </div>
+                    </div>
+                    <div class="row-dialog">
+                        <span class="text-dialog">Đơn vị tính <span class="text-dialog-warning">(*)</span></span>
+                        <div class="form-option">
+                            <input class="input-dialog input-option" />
+                            <div class="icon-option-dropdown"></div>
+                            <div class="icon-option-add"></div>
+                        </div>
+                    </div>
+                    <div class="row-dialog">
+                        <div class="col-1-dialog">
+                            <span class="text-dialog">Giá bán <span class="text-dialog-warning">(*)</span></span>
+                            <input class="input-dialog-price" />
+                        </div>
+                        <div class="col-2-dialog">
+                            <input type="checkbox" />
+                            <span class="text-dialog-checkbox">Thay đổi theo thời giá</span>
+                        </div>
+                    </div>
+                    <div class="row-dialog">
+                        <div class="col-1-dialog">
+                            <span class="text-dialog">Giá vốn</span>
+                            <input class="input-dialog-price" />
+                        </div>
+                        <div class="col-2-dialog">
+                            <input type="checkbox" />
+                            <span class="text-dialog-checkbox">Điều chỉnh giá tự do</span>
+                        </div>
+                    </div>
+                    <div class="row-dialog">
+                        <span class="text-dialog">Mô tả</span>
+                        <textarea class="textarea-dialog"></textarea>
+                    </div>
+                    <div class="row-dialog">
+                        <span class="text-dialog">Chế biến tại</span>
+                        <div class="form-option">
+                            <input class="input-dialog input-option" />
+                            <div class="icon-option-dropdown"></div>
+                            <div class="icon-option-add"></div>
+                        </div>
+                    </div>
+                    <div class="row-dialog">
+                        <span class="text-dialog"></span>
+                        <input type="checkbox" />
+                        <span class="text-dialog-checkbox">Không hiển thị trên thực đơn</span>
+                    </div>
                 </div>
-                <div class="col-2-dialog">
-                    <span class="text-dialog">Tên khách hàng <span class="text-dialog-warning">(*)</span></span>
-                    <input class="input-dialog-short" />
+                <div class="form-dialog-right"></div>
+            </div>
+            <!--Phần các nút của dialog-->
+            <div class="dialog-buttons">
+                <div title="F1" class="buttons-left">
+                    <div class="dialog-button-icon button-icon-help"></div>
+                    <div class="button-text"> Giúp</div>
+                </div>
+                <div class="buttons-right">
+                    <div title="Ctrl+S" class="">
+                        <div class="dialog-button-icon button-icon-save"></div>
+                        <div class="button-text">Cất</div>
+                    </div>
+                    <div title="Ctrl+Shift+S" class="button bothsave-add">
+                        <div class="dialog-button-icon button-icon-save-add"></div>
+                        <div class="button-text">Cất & Thêm</div>
+                    </div>
+                    <div title="Esc" class="button cancelx">
+                        <div class="dialog-button-icon button-icon-cancel"></div>
+                        <div class="button-text">Hủy</div>
+                    </div>
                 </div>
             </div>
-            <div class="row-dialog">
-                <div class="col-dialog">
-                    <span class="text-dialog">Mã thẻ thành viên</span>
-                    <input class="input-dialog-short" />
-                </div>
-                <div class="col-dialog">
-                    <span class="text-dialog">Hạng thẻ</span>
-                    <input class="input-dialog-short" />
-                </div>
-            </div>-->
-            <!--<div class="row-dialog">
-                <span>Nhóm khách hàng</span>
-                <input />
-            </div>
-            <div class="row-dialog">
-                <span>ĐT di động</span>
-                <input />
-            </div>
-            <div class="row-dialog">
-                <span>Ngày sinh</span>
-                <input />
-            </div>
-            <div class="row-dialog">
-                <span>Tên công ty</span>
-                <input />
-            </div>
-            <div class="col-dialog">
-                <span>Mã số thuế</span>
-                <input />
-                <span>Email</span>
-                <input />
-            </div>
-            <div class="row-dialog">
-                <span>Địa chỉ</span>
-                <input />
-            </div>
-            <div class="row-dialog">
-                <span>Ghi chú</span>
-                <textarea></textarea>
-            </div>
-            <div class="row-dialog">
-                <input type="checkbox" />
-                <span>Ngừng theo dõi</span>
-            </div>-->
         </div>
     </div>
     <script src="/Scripts/lib/jquery-3.3.1.min.js"></script>
