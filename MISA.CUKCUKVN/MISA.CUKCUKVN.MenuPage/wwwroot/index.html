@@ -17,7 +17,7 @@
     <link href="/Contents/Images/favicon.jpg" rel="shortcut icon" />
 </head>
 <body>
-    <!--Created by NVTuan-25/3/2019-->
+    <!--Created by NVTuan-5/4/2019-->
     <div class="container-fluid">
         <!--Phần header-->
         <div class="header">
@@ -154,15 +154,12 @@
                             <div class="toolbar-header-item-icon toolbar-header-item-delete"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-delete">Xóa</div>
                         </div>
-
                         <div class="toolbar-header-boder-left"></div>
                         <div class="toolbar-header-item">
                             <div class="toolbar-header-item-icon toolbar-header-item-order"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-order">Sắp xếp thứ tự</div>
                         </div>
-
                         <div class="toolbar-header-boder-left"></div>
-
                         <div class="toolbar-header-item" id="btnRefresh">
                             <div class="toolbar-header-item-icon toolbar-header-item-refresh"></div>
                             <div class="toolbar-header-item-text toolbar-header-item-min-width-refresh">Nạp</div>
@@ -252,7 +249,6 @@
                                             <div class="grid-column-filter">
                                                 <input class="filter-input" />
                                                 <div class="filter-option-other"></div>
-
                                             </div>
                                         </th>
                                         <th fieldData="quantify">
@@ -260,7 +256,6 @@
                                             <div class="grid-column-filter">
                                                 <input class="filter-input" />
                                                 <div class="filter-option-other"></div>
-
                                             </div>
                                         </th>
                                         <th fieldData="showOnMenu" dataType="checkbox">
@@ -270,7 +265,7 @@
                                                 <div class="filter-option-other"></div>
                                             </div>
                                         </th>
-                                        <th fieldData="únell" dataType="checkbox">
+                                        <th fieldData="unsell" dataType="checkbox">
                                             <div class="grid-column-title column-unsell">Ngừng bán</div>
                                             <div class="grid-column-filter">
                                                 <input class="filter-input" />
@@ -310,7 +305,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -318,11 +312,11 @@
     </div>
     <!--Phần dialog cho thêm, sửa, nhân bản-->
     <div class="dialogMenu" title="Thêm món">
-        <div class="box-dialog">
+        <div class="box-dialog" id="formDish">
             <div class="header-dialog">
                 <div class="header-dialog-title">Loại</div>
                 <div class="header-dialog-combobox">
-                    <input type="text" value="Món ăn" class="header-dialog-input" />
+                    <input id="dishType" type="text" value="Món ăn" class="header-dialog-input" fieldData ="dishType"/>
                     <div class="header-dialog-icon"></div>
                 </div>
             </div>
@@ -330,26 +324,26 @@
                 <div class="form-dialog-left">
                     <div class="row-dialog">
                         <span class="text-dialog">Tên món <span class="text-dialog-warning">(*)</span></span>
-                        <input class="input-dialog" autofocus />
+                        <input id="dishName" class="input-dialog" fieldData ="dishName" autofocus />
                     </div>
                     <div class="row-dialog">
                         <span class="text-dialog">Mã món <span class="text-dialog-warning">(*)</span></span>
-                        <input class="input-dialog" />
+                        <input id="dishCode" class="input-dialog" fieldData ="dishCode"/>
                     </div>
                     <div class="row-dialog">
                         <div class="col-1-dialog">
                             <span class="text-dialog">Thứ tự món</span>
-                            <input class="input-dialog-index" />
+                            <input id="dishIndex" class="input-dialog-index" fieldData ="dishIndex"/>
                         </div>
                         <div class="col-2-dialog">
-                            <input type="checkbox" />
+                            <input id="featured" type="checkbox" fieldData ="featured"/>
                             <span class="text-dialog-checkbox">Là món đặc trưng</span>
                         </div>
                     </div>
                     <div class="row-dialog">
                         <span class="text-dialog">Nhóm thực đơn</span>
                         <div class="form-option">
-                            <input class="input-dialog input-option" />
+                            <input id="menuGroup" class="input-dialog input-option" fieldData ="menuGroup"/>
                             <div class="icon-option-dropdown"></div>
                             <div class="icon-option-add"></div>
                         </div>
@@ -357,7 +351,7 @@
                     <div class="row-dialog">
                         <span class="text-dialog">Đơn vị tính <span class="text-dialog-warning">(*)</span></span>
                         <div class="form-option">
-                            <input class="input-dialog input-option" />
+                            <input id="dishUnit" class="input-dialog input-option" fieldData ="dishUnit"/>
                             <div class="icon-option-dropdown"></div>
                             <div class="icon-option-add"></div>
                         </div>
@@ -365,43 +359,43 @@
                     <div class="row-dialog">
                         <div class="col-1-dialog">
                             <span class="text-dialog">Giá bán <span class="text-dialog-warning">(*)</span></span>
-                            <input class="input-dialog-price" />
+                            <input value="0" id="dishPrice" class="input-dialog-price text-align-right" fieldData ="dishPrice"/>
                         </div>
                         <div class="col-2-dialog">
-                            <input type="checkbox" />
+                            <input id="changeWithPrice" type="checkbox" fieldData ="changeWithPrice"/>
                             <span class="text-dialog-checkbox">Thay đổi theo thời giá</span>
                         </div>
                     </div>
                     <div class="row-dialog">
                         <div class="col-1-dialog">
                             <span class="text-dialog">Giá vốn</span>
-                            <input class="input-dialog-price" />
+                            <input value="0" id="costPrice" class="input-dialog-price text-align-right" fieldData ="costPrice"/>
                         </div>
                         <div class="col-2-dialog">
-                            <input type="checkbox" />
+                            <input id="changeWithFree" type="checkbox" fieldData ="changeWithFree"/>
                             <span class="text-dialog-checkbox">Điều chỉnh giá tự do</span>
                         </div>
                     </div>
                     <div class="row-dialog">
                         <span class="text-dialog">Mô tả</span>
-                        <textarea class="textarea-dialog"></textarea>
+                        <textarea id="description" class="textarea-dialog" fieldData ="description"></textarea>
                     </div>
                     <div class="row-dialog">
                         <span class="text-dialog">Chế biến tại</span>
                         <div class="form-option">
-                            <input class="input-dialog input-option" />
+                            <input id="processingAddress" class="input-dialog input-option" fieldData ="processingAddress"/>
                             <div class="icon-option-dropdown"></div>
                             <div class="icon-option-add"></div>
                         </div>
                     </div>
                     <div class="row-dialog">
                         <span class="text-dialog"></span>
-                        <input type="checkbox" />
+                        <input id="showOnMenu" type="checkbox" fieldData ="showOnMenu"/>
                         <span class="text-dialog-checkbox">Không hiển thị trên thực đơn</span>
                     </div>
-                    <div class="row-dialog row-for-edit">
+                    <div class="row-dialog row-unsell">
                         <span class="text-dialog"></span>
-                        <input type="checkbox" />
+                        <input id="unsell" type="checkbox" fieldData ="unsell"/>
                         <span class="text-dialog-checkbox">Ngừng bán</span>
                     </div>
                 </div>
@@ -410,23 +404,31 @@
             <!--Phần các nút của dialog-->
             <div class="dialog-button">
                 <div class="button-left">
-                    <div title="F1" class="button-help button-hover">
-                        <div class="dialog-button-icon button-icon-help"></div>
-                        <div class="button-text"> Giúp</div>
+                    <div title="F1" class="button-dialog button-help button-hover" id="btnHelp">
+                        <div class="button-covered">
+                            <div class="dialog-button-icon button-icon-help"></div>
+                            <div class="button-text">Giúp</div>
+                        </div>
                     </div>
                 </div>
                 <div class="button-right">
-                    <div title="Ctrl+S" class="button-save button-hover" id="btnSave">
-                        <div class="dialog-button-icon button-icon-save"></div>
-                        <div class="button-text">Cất</div>
+                    <div title="Ctrl+S" class="button-dialog button-save button-hover" id="btnSave">
+                        <div class="button-covered">
+                            <div class="dialog-button-icon button-icon-save"></div>
+                            <div class="button-text">Cất</div>
+                        </div>
                     </div>
-                    <div title="Ctrl+Shift+S" class="button-add-save button-hover">
-                        <div class="dialog-button-icon button-icon-add-save"></div>
-                        <div class="button-text">Cất & Thêm</div>
+                    <div title="Ctrl+Shift+S" class="button-dialog button-add-save button-hover" id="btnAddSave">
+                        <div class="button-covered">
+                            <div class="dialog-button-icon button-icon-add-save"></div>
+                            <div class="button-text">Cất & Thêm</div>
+                        </div>
                     </div>
-                    <div title="Esc" class="button-cancel button-hover">
-                        <div class="dialog-button-icon button-icon-cancel"></div>
-                        <div class="button-text">Hủy</div>
+                    <div title="Esc" class="button-dialog button-cancel button-hover" id="btnCancel">
+                        <div class="button-covered">
+                            <div class="dialog-button-icon button-icon-cancel"></div>
+                            <div class="button-text">Hủy bỏ</div>
+                        </div>
                     </div>
                 </div>
             </div>

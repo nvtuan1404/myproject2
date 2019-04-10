@@ -24,3 +24,17 @@ E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.
 E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.RazorTargetAssemblyInfo.cache
 E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.dll
 E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.pdb
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.deps.json
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.runtimeconfig.json
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.runtimeconfig.dev.json
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.dll
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.pdb
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.csproj.CoreCompileInputs.cache
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.RazorAssemblyInfo.cache
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.RazorAssemblyInfo.cs
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.AssemblyInfoInputs.cache
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.AssemblyInfo.cs
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.RazorTargetAssemblyInfo.cache
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.dll
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.pdb
+C:\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.csprojAssemblyReference.cache

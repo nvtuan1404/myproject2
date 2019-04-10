@@ -1,12 +1,29 @@
 ﻿// Hàm format dữ liệu dạng tiền
-// Created by NVTuan ngày 1/4/2019
+// Created by NVTuan - 8/4/2019
 Number.prototype.formatMoney = function () {
     return this.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
 };
 
+var menu = new Object();
+menu.dishType = $('#dishType').val();
+menu.dishCode = $('#dishCode').val();
+menu.dishName = $('#dishName').val();
+menu.menuGroup = $('#menuGroup').val();
+menu.dishUnit = $('#dishUnit').val();
+menu.dishPrice = $('#dishPrice').val();
+menu.changeWithPrice = $('#changeWithPrice').is(":checked");
+menu.quantify = $('#quantify').val();
+menu.showOnMenu = $('#showOnMenu').is(":checked");
+menu.featured = $('#featured').is(":checked");
+menu.changeWithFree = $('#changeWithFree').is(":checked");
+menu.processingAddress = $('#processingAddress').val();
+menu.description = $('#description').val();
+menu.costPrice = $('#costPrice').val();
+menu.dishIndex = $('#dishIndex').val();
+
 var MenuObject = Object.create({
     // Hàm build dữ liệu lên table
-    // Created by NVTuan ngày 29/3/2019
+    // Created by NVTuan - 8/4/2019
     builDataIntoTable: function (data) {
         $.each(data, function (index, itemData) {
             var column = $('#tableMenu thead tr th'); // Lấy thông tin các cột dữ liệu
@@ -23,11 +40,9 @@ var MenuObject = Object.create({
                 var valueField = itemData[fieldData] ? itemData[fieldData] : ""; // Lấy giá trị của từng cột, nếu có giá trị thì gán vào biến value, nếu không có giá trị (hoặc false) thì gán bằng ""
                 switch (typeData) {
                     case "money": {
-                        if (valueField) {
-                            valueField = new Number(valueField);
-                            valueField = valueField.formatMoney();
-                            rowHTML = $(rowHTML).append('<td class="text-align-right">' + valueField + '</td>');
-                        }
+                        valueField = new Number(valueField);
+                        valueField = valueField.formatMoney();
+                        rowHTML = $(rowHTML).append('<td class="text-align-right">' + valueField + '</td>');
                         break;
                     }
                     case "checkbox": {
@@ -49,7 +64,7 @@ var MenuObject = Object.create({
     },
 
     // Chọn một bản ghi cụ thể
-    // Created by NVTuan ngày 1/4/2019
+    // Created by NVTuan - 8/4/2019
     rowSelected: function () {
         $('tr').removeClass('rowSelected');
         $(this).addClass('rowSelected');

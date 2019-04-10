@@ -7,11 +7,15 @@ using MISA.CUKCUKVN.MenuPage.Models;
 
 namespace MISA.CUKCUKVN.MenuPage.Controllers
 {
+    /// <summary>
+    /// Lớp MenuController chứa các hàm Thêm, Sửa, Xóa 
+    /// </summary>
+    /// Created by NVTuan - 8/4/2019
     [Route("api/Menu/[action]")]
     [ApiController]
     public class MenuController : ControllerBase
     {
-        // GET api/Customer
+        // GET api/Menu
         [HttpGet]
         public IEnumerable<Menu> Get()
         {
@@ -25,10 +29,14 @@ namespace MISA.CUKCUKVN.MenuPage.Controllers
             return "value";
         }
 
-        // POST api/values
+        // POST api/Menu
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Add(Menu menu)
         {
+            menu.CreatedDate = DateTime.Now;
+            menu.MenuID = Guid.NewGuid();
+            Menu.listMenu.Add(menu);
+            return Ok(new { Success = 200, Data = Menu.listMenu.OrderByDescending(x => x.CreatedDate)});
         }
 
         // PUT api/values/5
@@ -38,9 +46,12 @@ namespace MISA.CUKCUKVN.MenuPage.Controllers
         }
 
         // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete]
+        public IActionResult Delete([FromHeader]string id)
         {
+            var menu = Menu.listMenu.Where(x => x.MenuID.ToString() == id).FirstOrDefault();
+            Menu.listMenu.Remove(menu);
+            return Ok(new {Success = 200, Data = Menu.listMenu.OrderByDescending(x => x.CreatedDate)});
         }
     }
 }

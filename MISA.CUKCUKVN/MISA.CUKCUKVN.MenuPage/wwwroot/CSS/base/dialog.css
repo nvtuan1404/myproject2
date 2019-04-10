@@ -1,4 +1,8 @@
-﻿.ui-dialog {
+﻿* {
+    box-sizing: border-box;
+}
+
+.ui-dialog {
     padding: unset !important;
 }
 
@@ -123,89 +127,103 @@
             align-items: center;
         }
 
-        .form-dialog .form-dialog-left .row-for-edit {
+            /*.form-dialog .form-dialog-left .row-for-edit {
             display: none;
-        }
+        }*/
 
-        .form-dialog .form-dialog-left .row-dialog .text-dialog {
-            color: #000;
-            width: 120px;
-        }
+            .form-dialog .form-dialog-left .row-dialog .text-dialog {
+                color: #000;
+                width: 120px;
+            }
 
 
-        .form-dialog .form-dialog-left .row-dialog .text-dialog-warning {
-            color: red;
-        }
+            .form-dialog .form-dialog-left .row-dialog .text-dialog-warning {
+                color: red;
+            }
 
-        .form-dialog .form-dialog-left .row-dialog .input-dialog {
-            width: 379px;
-            height: 22px;
-            border: 1px solid #c1c1c1;
-            padding: 3px 5px;
-        }
-
-        .form-dialog .form-dialog-left .row-dialog .input-dialog-index {
-            height: 22px;
-            width: 170px;
-            border: 1px solid #c1c1c1;
-            padding: 3px 5px;
-        }
-
-        .form-dialog .form-dialog-left .row-dialog .input-dialog-price {
-            height: 22px;
-            width: 115px;
-            border: 1px solid #c1c1c1;
-            padding: 3px 5px;
-        }
-
-        .form-dialog .form-dialog-left .row-dialog .textarea-dialog {
-            height: 50px;
-            border: 1px solid #c1c1c1;
-            width: 379px;
-            padding: 3px 5px;
-        }
-
-        .form-dialog .form-dialog-left .row-dialog .text-dialog-checkbox {
-            padding: 0px 4px;
-        }
-
-        .form-dialog .form-dialog-left .row-dialog .col-1-dialog {
-            display: flex;
-        }
-
-        .form-dialog .form-dialog-left .row-dialog .col-2-dialog {
-            display: flex;
-            align-items: center;
-            margin-left: 8px;
-        }
-
-        .form-dialog .form-dialog-left .row-dialog .form-option {
-            display: flex;
-            border: 1px solid #ccc;
-        }
-
-            .form-dialog .form-dialog-left .row-dialog .form-option .icon-option-dropdown {
-                background-image: url('/contents/images/dialog/trigger.png');
-                width: 22px;
+            .form-dialog .form-dialog-left .row-dialog .input-dialog {
+                width: 379px;
                 height: 22px;
+                border: 1px solid #c1c1c1;
+                padding: 3px 5px;
             }
 
-            .form-dialog .form-dialog-left .row-dialog .form-option .icon-option-add {
-                background-image: url('/contents/images/dialog/add-blue-icon.png');
-                width: 22px;
+            .form-dialog .form-dialog-left .row-dialog .input-dialog-index {
                 height: 22px;
-                background-repeat: no-repeat;
-                background-position: center center !important;
+                width: 170px;
+                border: 1px solid #c1c1c1;
+                padding: 3px 5px;
             }
 
-            .form-dialog .form-dialog-left .row-dialog .form-option .input-option {
-                width: 333px;
-                border: none;
+            .form-dialog .form-dialog-left .row-dialog .input-dialog-price {
+                height: 22px;
+                width: 115px;
+                border: 1px solid #c1c1c1;
+                padding: 3px 5px;
             }
+
+            .form-dialog .form-dialog-left .row-dialog .textarea-dialog {
+                height: 50px;
+                border: 1px solid #c1c1c1;
+                width: 379px;
+                padding: 3px 5px;
+                resize: none;
+            }
+
+            .form-dialog .form-dialog-left .row-dialog .text-dialog-checkbox {
+                padding: 0px 4px;
+            }
+
+            .form-dialog .form-dialog-left .row-dialog .col-1-dialog {
+                display: flex;
+            }
+
+            .form-dialog .form-dialog-left .row-dialog .col-2-dialog {
+                display: flex;
+                align-items: center;
+                margin-left: 8px;
+            }
+
+            .form-dialog .form-dialog-left .row-dialog .form-option {
+                display: flex;
+                border: 1px solid #ccc;
+            }
+
+                .form-dialog .form-dialog-left .row-dialog .form-option .icon-option-dropdown {
+                    background-image: url('/contents/images/dialog/trigger.png');
+                    width: 22px;
+                    height: 22px;
+                }
+
+                .form-dialog .form-dialog-left .row-dialog .form-option .icon-option-add {
+                    background-image: url('/contents/images/dialog/add-blue-icon.png');
+                    width: 22px;
+                    height: 22px;
+                    background-repeat: no-repeat;
+                    background-position: center center !important;
+                }
+
+                .form-dialog .form-dialog-left .row-dialog .form-option .input-option {
+                    width: 333px;
+                    border: none;
+                }
 
 .dialog-button {
     display: flex;
 }
+
+    .dialog-button .button-dialog {
+        display: flex;
+        border: 1px solid #ccc;
+        background-color: #fcfcfc;
+        padding: 3px;
+        justify-content: center;
+    }
+
+        .dialog-button .button-dialog .button-covered {
+            align-items: center;
+            display: flex;
+        }
 
     .dialog-button .button-left {
         display: flex;
@@ -216,11 +234,6 @@
         .dialog-button .button-left .button-help {
             width: 75px;
             height: 25px;
-            background-color: #fcfcfc;
-            border: 1px solid #ccc;
-            display: flex;
-            align-items: center;
-            padding: 4px 8px;
         }
 
     .dialog-button .dialog-button-icon {
@@ -231,7 +244,7 @@
     }
 
     .dialog-button .button-text {
-        padding: 3px 5px;
+        padding: 0px 5px;
     }
 
     .dialog-button .button-left .button-icon-help {
@@ -249,32 +262,17 @@
         .dialog-button .button-right .button-save {
             width: 86px;
             height: 25px;
-            background-color: #fcfcfc;
-            border: 1px solid #ccc;
-            display: flex;
-            align-items: center;
-            padding: 4px 8px;
         }
 
         .dialog-button .button-right .button-add-save {
             width: 123px;
             height: 25px;
-            background-color: #fcfcfc;
-            border: 1px solid #ccc;
-            display: flex;
-            align-items: center;
-            padding: 4px 8px;
             margin: 0 8px;
         }
 
         .dialog-button .button-right .button-cancel {
             width: 91px;
             height: 25px;
-            background-color: #fcfcfc;
-            border: 1px solid #ccc;
-            display: flex;
-            align-items: center;
-            padding: 4px 8px;
         }
 
         .dialog-button .button-right .button-icon-save {

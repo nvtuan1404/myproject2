@@ -1,4 +1,6 @@
-﻿var tee = $('.gridtable thead');
+﻿//Code JavaScript fixed thead table
+//Created by NVTuan - 6/4/2019
+var tee = $('.gridtable thead');
 var tw = document.getElementsByClassName('table-responsive')[0];
 var cloner = document.getElementsByClassName('table-responsive')[0];
 var bd = document.getElementsByClassName('grid')[0];
@@ -20,7 +22,7 @@ newTable.classList.add("gridtable");
 $(newTableWrap).css({ 'width': '100%', 'background-color': '#ededed', 'overflow': 'hidden' });
 
 bd.insertBefore(newTableWrap, tw);
-$(oldTable).css('margin-top', ('-' + headHeight));
+$(oldTable).css('margin-top', '-' + headHeight);
 
 $(tw).on('scroll', function (e) {
     var newLeft = e.target.scrollLeft;
