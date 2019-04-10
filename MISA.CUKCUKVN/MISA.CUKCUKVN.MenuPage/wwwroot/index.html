@@ -330,7 +330,7 @@
                 <div class="form-dialog-left">
                     <div class="row-dialog">
                         <span class="text-dialog">Tên món <span class="text-dialog-warning">(*)</span></span>
-                        <input class="input-dialog" />
+                        <input class="input-dialog" autofocus />
                     </div>
                     <div class="row-dialog">
                         <span class="text-dialog">Mã món <span class="text-dialog-warning">(*)</span></span>
@@ -399,25 +399,32 @@
                         <input type="checkbox" />
                         <span class="text-dialog-checkbox">Không hiển thị trên thực đơn</span>
                     </div>
+                    <div class="row-dialog row-for-edit">
+                        <span class="text-dialog"></span>
+                        <input type="checkbox" />
+                        <span class="text-dialog-checkbox">Ngừng bán</span>
+                    </div>
                 </div>
                 <div class="form-dialog-right"></div>
             </div>
             <!--Phần các nút của dialog-->
-            <div class="dialog-buttons">
-                <div title="F1" class="buttons-left">
-                    <div class="dialog-button-icon button-icon-help"></div>
-                    <div class="button-text"> Giúp</div>
+            <div class="dialog-button">
+                <div class="button-left">
+                    <div title="F1" class="button-help button-hover">
+                        <div class="dialog-button-icon button-icon-help"></div>
+                        <div class="button-text"> Giúp</div>
+                    </div>
                 </div>
-                <div class="buttons-right">
-                    <div title="Ctrl+S" class="">
+                <div class="button-right">
+                    <div title="Ctrl+S" class="button-save button-hover" id="btnSave">
                         <div class="dialog-button-icon button-icon-save"></div>
                         <div class="button-text">Cất</div>
                     </div>
-                    <div title="Ctrl+Shift+S" class="button bothsave-add">
-                        <div class="dialog-button-icon button-icon-save-add"></div>
+                    <div title="Ctrl+Shift+S" class="button-add-save button-hover">
+                        <div class="dialog-button-icon button-icon-add-save"></div>
                         <div class="button-text">Cất & Thêm</div>
                     </div>
-                    <div title="Esc" class="button cancelx">
+                    <div title="Esc" class="button-cancel button-hover">
                         <div class="dialog-button-icon button-icon-cancel"></div>
                         <div class="button-text">Hủy</div>
                     </div>

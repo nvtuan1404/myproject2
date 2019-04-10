@@ -20,7 +20,7 @@ class MenuJS {
         $(document).on('click', '#btnEdit', function () {
             dia.dialog.dialog('open');
         });
-        //$(document).on('click', '#btnAdd', this.addRow.bind(this));
+        $(document).on('click', '#btnSave', this.addRow.bind(this));
     }
 
     // Hàm loadData để gọi api lấy dữ liệu đổ về
@@ -42,7 +42,7 @@ class MenuJS {
     // Hàm thêm một row
     //Created by NVTuan ngày 1/4/2019
     addRow() {
-
+        alert(1);
     } 
 
     // Hàm nhân bản một row

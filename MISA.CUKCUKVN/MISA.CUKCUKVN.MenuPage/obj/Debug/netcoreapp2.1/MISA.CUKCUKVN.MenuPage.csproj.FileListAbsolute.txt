@@ -16,7 +16,6 @@ E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.
 E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.runtimeconfig.dev.json
 E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.dll
 E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\bin\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.pdb
-E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.csprojAssemblyReference.cache
 E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.csproj.CoreCompileInputs.cache
 E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.RazorAssemblyInfo.cache
 E:\NVTuan\myproject2\MISA.CUKCUKVN\MISA.CUKCUKVN.MenuPage\obj\Debug\netcoreapp2.1\MISA.CUKCUKVN.MenuPage.RazorAssemblyInfo.cs
