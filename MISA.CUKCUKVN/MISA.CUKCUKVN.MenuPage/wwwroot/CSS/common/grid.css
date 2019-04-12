@@ -11,8 +11,11 @@ table {
         background-color: #ededed !important;
     }
 
-    table thead th, tr {
+    table thead th, td {
         border: 1px solid #ccc;
+        box-sizing: border-box;
+        /*max-width: 120px;
+        min-width: 120px;*/
     }
 
     table tbody tr, td {
@@ -47,7 +50,7 @@ table tbody tr:hover {
         position: absolute;
         bottom: 0px;
         top: 56px;
-        overflow: auto;
+        overflow: overlay; /*Hiển thị thanh scroll nằm trên table*/
     }
 
     .grid .grid-column-title {
@@ -57,42 +60,63 @@ table tbody tr:hover {
     }
 
     .grid .column-dish-type {
-        width: 160px;
+        width: 120px;
+        max-width: 120px;
+        min-width: 120px;
     }
 
     .grid .column-dish-code {
-        width: 180px;
+        width: 160px;
+        max-width: 160px;
+        min-width: 160px;
     }
 
     .grid .column-dish-name {
-        width: 150px;
+        width: 200px;
+        max-width: 200px;
+        min-width: 200px;
     }
 
     .grid .column-menu-group {
-        width: 150px;
+        width: 160px;
+        max-width: 160px;
+        min-width: 160px;
     }
 
     .grid .column-dish-unit {
         width: 90px;
+        max-width: 90px;
+        min-width: 90px;
     }
 
     .grid .column-dish-price {
         width: 120px;
+        max-width: 120px;
+        min-width: 120px;
     }
+
     .grid .column-change-with-price {
         width: 150px;
+        max-width: 150px;
+        min-width: 150px;
     }
 
     .grid .column-quantify {
         width: 140px;
+        max-width: 140px;
+        min-width: 140px;
     }
 
     .grid .column-show-on-menu {
         width: 150px;
+        max-width: 150px;
+        min-width: 150px;
     }
 
     .grid .column-unsell {
-        width: 110px;
+        width: 90px;
+        max-width: 90px;
+        min-width: 90px;
     }
 
     .grid .grid-column-filter {
@@ -127,11 +151,11 @@ table tbody tr:hover {
             border-color: #ccc;
         }
 
-        .grid .grid-column-filter .filter-option-price:before {
-            content: '≤';
-            line-height: 24px;
-            padding: 3px;
-        }
+            .grid .grid-column-filter .filter-option-price:before {
+                content: '≤';
+                line-height: 24px;
+                padding: 3px;
+            }
 
         .grid .grid-column-filter .filter-option-other {
             background-image: url('/contents/images/trigger.png');

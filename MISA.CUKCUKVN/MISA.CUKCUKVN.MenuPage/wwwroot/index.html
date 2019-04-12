@@ -202,71 +202,71 @@
                             <table class="gridtable" id="tableMenu">
                                 <thead>
                                     <tr>
-                                        <th fieldData="dishType">
-                                            <div class="grid-column-title column-dish-type">Loại món</div>
+                                        <th fieldData="dishType" class="column-dish-type">
+                                            <div class="grid-column-title">Loại món</div>
                                             <div class="grid-column-filter">
                                                 <div class="filter-option"></div>
                                                 <input class="filter-input" />
                                             </div>
                                         </th>
-                                        <th fieldData="dishCode">
-                                            <div class="grid-column-title column-dish-code">Mã món</div>
+                                        <th fieldData="dishCode" class="column-dish-code">
+                                            <div class="grid-column-title">Mã món</div>
                                             <div class="grid-column-filter">
                                                 <div class="filter-option"></div>
                                                 <input class="filter-input" />
                                             </div>
                                         </th>
-                                        <th fieldData="dishName">
-                                            <div class="grid-column-title column-dish-name">Tên món</div>
+                                        <th fieldData="dishName" class="column-dish-name">
+                                            <div class="grid-column-title">Tên món</div>
                                             <div class="grid-column-filter">
                                                 <div class="filter-option"></div>
                                                 <input class="filter-input" />
                                             </div>
                                         </th>
-                                        <th fieldData="menuGroup">
-                                            <div class="grid-column-title column-menu-group">Nhóm thực đơn</div>
+                                        <th fieldData="menuGroup" class="column-menu-group">
+                                            <div class="grid-column-title">Nhóm thực đơn</div>
                                             <div class="grid-column-filter">
                                                 <div class="filter-option"></div>
                                                 <input class="filter-input" />
                                             </div>
                                         </th>
-                                        <th fieldData="dishUnit">
-                                            <div class="grid-column-title column-dish-unit">Đơn vị tính</div>
+                                        <th fieldData="dishUnit" class="column-dish-unit">
+                                            <div class="grid-column-title">Đơn vị tính</div>
                                             <div class="grid-column-filter">
                                                 <div class="filter-option"></div>
                                                 <input class="filter-input" />
                                             </div>
                                         </th>
-                                        <th fieldData="dishPrice" dataType="money">
-                                            <div class="grid-column-title column-dish-price">Giá bán</div>
+                                        <th fieldData="dishPrice" dataType="money" class="column-dish-price">
+                                            <div class="grid-column-title">Giá bán</div>
                                             <div class="grid-column-filter">
                                                 <div class="filter-option-price"></div>
                                                 <input class="filter-input" />
                                             </div>
                                         </th>
-                                        <th fieldData="changeWithPrice" dataType="checkbox">
-                                            <div class="grid-column-title column-change-with-price">Thay đổi theo thời giá</div>
+                                        <th fieldData="changeWithPrice" dataType="checkbox" class="column-change-with-price">
+                                            <div class="grid-column-title">Thay đổi theo thời giá</div>
                                             <div class="grid-column-filter">
                                                 <input class="filter-input" />
                                                 <div class="filter-option-other"></div>
                                             </div>
                                         </th>
-                                        <th fieldData="quantify">
-                                            <div class="grid-column-title column-quantify">Định lượng NVL</div>
+                                        <th fieldData="quantify" class="column-quantify">
+                                            <div class="grid-column-title">Định lượng NVL</div>
                                             <div class="grid-column-filter">
                                                 <input class="filter-input" />
                                                 <div class="filter-option-other"></div>
                                             </div>
                                         </th>
-                                        <th fieldData="showOnMenu" dataType="checkbox">
-                                            <div class="grid-column-title column-show-on-menu">Hiển thị trên thực đơn</div>
+                                        <th fieldData="showOnMenu" dataType="checkbox" class="column-show-on-menu">
+                                            <div class="grid-column-title">Hiển thị trên thực đơn</div>
                                             <div class="grid-column-filter">
                                                 <input class="filter-input" />
                                                 <div class="filter-option-other"></div>
                                             </div>
                                         </th>
-                                        <th fieldData="unsell" dataType="checkbox">
-                                            <div class="grid-column-title column-unsell">Ngừng bán</div>
+                                        <th fieldData="unsell" dataType="checkbox" class="column-unsell">
+                                            <div class="grid-column-title">Ngừng bán</div>
                                             <div class="grid-column-filter">
                                                 <input class="filter-input" />
                                                 <div class="filter-option-other"></div>
@@ -311,7 +311,7 @@
         </div>
     </div>
     <!--Phần dialog cho thêm, sửa, nhân bản-->
-    <div class="dialogMenu" title="Thêm món">
+    <div class="dialogGeneral" title="Thêm món">
         <div class="box-dialog" id="formDish">
             <div class="header-dialog">
                 <div class="header-dialog-title">Loại</div>
@@ -434,6 +434,7 @@
             </div>
         </div>
     </div>
+    <div class=".dialogConfirm" title="CUKCUK - Quản lý nhà hàng"></div>
     <script src="/Scripts/lib/jquery-3.3.1.min.js"></script>
     <script src="/Scripts/lib/jquery-ui.min.js"></script>
     <script src="/Scripts/lib/bootstrap.min.js"></script>

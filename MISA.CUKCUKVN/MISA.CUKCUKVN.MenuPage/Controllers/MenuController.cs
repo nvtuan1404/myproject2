@@ -8,50 +8,75 @@ using MISA.CUKCUKVN.MenuPage.Models;
 namespace MISA.CUKCUKVN.MenuPage.Controllers
 {
     /// <summary>
-    /// Lớp MenuController chứa các hàm Thêm, Sửa, Xóa 
+    /// Lớp MenuController chứa các controller GetAll, Get,  Add, Update, Delete
     /// </summary>
     /// Created by NVTuan - 8/4/2019
     [Route("api/Menu/[action]")]
     [ApiController]
     public class MenuController : ControllerBase
     {
-        // GET api/Menu
+        /// <summary>
+        /// Hàm lấy tất cả các bản ghi
+        /// </summary>
+        /// <returns>Trả về một danh sách các bản ghi</returns>
+        /// Created by NVTuan - 11/4/2019
         [HttpGet]
-        public IEnumerable<Menu> Get()
+        public IEnumerable<Menu> GetAll()
         {
-            return Menu.listMenu;
+            return Menu.listMenu.OrderByDescending(x => x.ModifiedDate);
         }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        /// <summary>
+        /// Hàm lấy một bản ghi
+        /// </summary>
+        /// <param name="id">Là id của bản ghi muốn lấy</param>
+        /// <returns>Trả về bản ghi tìm được</returns>
+        /// Created by NVTuan - 11/4/2019
+        [HttpGet]
+        public ActionResult<Menu> Get([FromHeader] string id)
         {
-            return "value";
+            return Menu.listMenu.FirstOrDefault((x => x.MenuID.ToString() == id));
         }
-
-        // POST api/Menu
+        /// <summary>
+        /// Hàm thêm một bản ghi
+        /// </summary>
+        /// <param name="menu">Bản ghi muốn thêm vào</param>
+        /// <returns>Trả về một dánh sách các bản ghi</returns>
+        /// Created by NVTuan - 11/4/2019
         [HttpPost]
         public IActionResult Add(Menu menu)
         {
-            menu.CreatedDate = DateTime.Now;
+            menu.ModifiedDate = DateTime.Now;
             menu.MenuID = Guid.NewGuid();
             Menu.listMenu.Add(menu);
-            return Ok(new { Success = 200, Data = Menu.listMenu.OrderByDescending(x => x.CreatedDate)});
+            return Ok(new { Success = 200, Data = Menu.listMenu.OrderByDescending(x => x.ModifiedDate) });
         }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        /// <summary>
+        /// Hàm sửa một bản ghi
+        /// </summary>
+        /// <param name="menuEdited">Bản ghi đã chỉnh sửa</param>
+        /// <returns>Trả về một danh sách các bản ghi</returns>
+        /// Created by NVTuan - 12/4/2019
+        [HttpPut]
+        public IActionResult Update([FromBody] Menu menuEdited)
         {
+            menuEdited.ModifiedDate = DateTime.Now;
+            var itemIndex = Menu.listMenu.FindIndex(x => x.MenuID == menuEdited.MenuID);
+            Menu.listMenu.RemoveAt(itemIndex);
+            Menu.listMenu.Add(menuEdited);
+            return Ok(new { Success = 200, Data = Menu.listMenu.OrderByDescending(x => x.ModifiedDate) });
         }
-
-        // DELETE api/values/5
+        /// <summary>
+        /// Hàm xóa một bản ghi
+        /// </summary>
+        /// <param name="id">Là Id của bản ghi muốn xóa</param>
+        /// <returns>Trả về một danh sách các bản ghi</returns>
+        /// Created by NVTuan - 11/4/2019
         [HttpDelete]
         public IActionResult Delete([FromHeader]string id)
         {
-            var menu = Menu.listMenu.Where(x => x.MenuID.ToString() == id).FirstOrDefault();
-            Menu.listMenu.Remove(menu);
-            return Ok(new {Success = 200, Data = Menu.listMenu.OrderByDescending(x => x.CreatedDate)});
+            var itemIndex = Menu.listMenu.FindIndex(x => x.MenuID.ToString() == id);
+            Menu.listMenu.RemoveAt(itemIndex);
+            return Ok(new { Success = 200, Data = Menu.listMenu.OrderByDescending(x => x.ModifiedDate) });
         }
     }
 }

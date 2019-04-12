@@ -25,6 +25,7 @@ var MenuObject = Object.create({
     // Hàm build dữ liệu lên table
     // Created by NVTuan - 8/4/2019
     builDataIntoTable: function (data) {
+        $('#tbodyMenu').children().remove();
         $.each(data, function (index, itemData) {
             var column = $('#tableMenu thead tr th'); // Lấy thông tin các cột dữ liệu
             var rowHTML = '<tr></tr>';
